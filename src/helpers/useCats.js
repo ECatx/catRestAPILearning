@@ -15,7 +15,7 @@ export const searchItem = ref('')
   export const getCats = async () => {
       try {
           const ressource = searchItem.value ? 'images/search' : 'images/search' 
-          const response = await api(ressource,{ params: {limit:8, size:"full"} })
+          const response = await api(ressource,{ params: {limit:16, size:"full"} })
           cats.value = response.data
           // console.log(response.data[0].url)
 

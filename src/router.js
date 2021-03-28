@@ -1,7 +1,7 @@
 import {createRouter,createWebHistory} from 'vue-router'
 
 import Home from './pages/Home.vue'
-import Details from './pages/Details.vue'
+// import Details from './pages/Details.vue'
 import Info from './pages/Info.vue'
 
 const routes = [
@@ -13,10 +13,6 @@ const routes = [
     path: '/Info/:id',
     props: true,
     component: Info,
-},
-{
-    path: '/Details',
-    component: Details,
 },
 ]
 
