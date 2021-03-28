@@ -8,7 +8,7 @@ export const searchItem = ref('')
   const api = axios.create({
     baseURL: 'https://api.thecatapi.com/v1/',
     params: {
-      api_key: "1f913fd2-a737-4934-9004-b86bbe545911",
+      api_key: import.meta.env.VITE_APIKEY,
     },
   })
   export const getCats = async () => {
